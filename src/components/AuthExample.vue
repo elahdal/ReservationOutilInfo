@@ -34,6 +34,7 @@
           await signInWithEmailAndPassword(auth, email.value, password.value);
         } catch (error) {
           console.error('Error logging in:', error);
+          alert("erreur de connexion" + error.message);
         }
       };
   
