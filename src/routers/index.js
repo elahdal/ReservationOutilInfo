@@ -5,14 +5,12 @@ import { createRouter, createWebHistory } from 'vue-router';
 import AuthExample from '@/components/AuthExample.vue';
 import AccueilPage from '@/components/AccueilPage.vue';
 import CategoriesView from '@/components/CategoriesView.vue';
-import CategorieView from '@/components/CategorieView.vue';
 
 
 const routes = [
     {path:'/', component:AuthExample},
     {path:'/accueil', component:AccueilPage},
     {path:'/categories', component: CategoriesView},
-    {path:'/categorie/:id', component:CategorieView, name:'Categorie'},
 ]
 const router = createRouter({
     history: createWebHistory(),
@@ -20,3 +18,4 @@ const router = createRouter({
 })
 
 export default router;
+////{path:'/categorie/:id', component:CategorieView, name:'Categorie'},

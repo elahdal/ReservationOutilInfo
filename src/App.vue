@@ -5,7 +5,7 @@
       <router-link to="/">Connexion</router-link> |
       <router-link to="/accueil">Accueil</router-link> |
       <router-link to="/categories">Categories</router-link> |
-      <router-link :to="{name:'Categorie', params:{id: categorie.id }}">{{ categorie.name }}</router-link>
+      <!--<router-link :to="{name:'Categorie', params:{id: categorie.id }}">{{ categorie.name }}</router-link>-->>
     </nav>
     <router-view/> <!-- affiche le composant correspondant à la route actuelle-->
   </div>
